@@ -1,0 +1,12 @@
+footer {
+  align-content: flex-end;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    color: $white;
+    justify-content: space-between;
+    .link {
+      color: $white;
+    }
+  }
+}

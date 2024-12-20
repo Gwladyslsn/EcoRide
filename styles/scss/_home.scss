@@ -1,0 +1,55 @@
+.presentation {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+
+  .div-prez {
+    align-content: center;
+    background-color: $white;
+    color: $primary;
+    border-radius: 41px;
+  }
+
+  .text-prez {
+    padding: 15px;
+  }
+  .img {
+    width: 746px;
+    height: 373px;
+  }
+}
+
+.slogan {
+  text-align: center;
+  color: $white;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
+.search-bar {
+  background-color: $white;
+  color: $primary;
+  border-radius: 41px;
+  height: 70px;
+  margin-bottom: 250px;
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  .line {
+    width: 2px;
+    height: 30px;
+    background-color: $primary;
+    margin: 0 5px;
+  }
+}
