@@ -1,11 +1,27 @@
 html {
   scroll-behavior: smooth;
+  padding: 10px 10px 10px 10px;
+}
+
+.header-website {
   padding: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-website a {
+  color: #f4f4f4;
+  text-decoration: none;
 }
 
 body {
   background-color: #011d76;
   color: #f4f4f4;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .logo {
+  width: 10rem;
+  border-radius: 50%;
 }
 
 .header-website {
@@ -18,26 +34,50 @@ body {
 
 .navbar {
   display: flex;
-  align-items: flex-start;
+  padding-bottom: 20px;
   justify-content: space-between;
-  padding-bottom: 70px;
 }
-.navbar .logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.navbar .dropdown-button {
+  width: 50px;
+  height: 50px;
+  background-color: #f4f4f4;
+  color: #011d76;
 }
-.navbar .menu {
+.navbar .dropdown-button:hover {
+  background-color: #96c1ff;
+}
+.navbar .dropdown-button:hover .dropdown-content {
   display: flex;
-  flex-direction: row;
-  padding: 15px;
-  gap: 40px;
-  list-style-type: none;
-}
-.navbar .menu .nav-link {
-  color: #f4f4f4;
+  flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .dropdown-button {
+    display: none;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    flex-wrap: nowrap;
+  }
+  .navlinks .navlink {
+    color: #f4f4f4;
+    padding: 10px 20px;
+  }
+  .navlinks .navlink:hover {
+    background-color: #96c1ff;
+    color: #011d76;
+    border-radius: 5%;
+  }
+}
 footer {
   align-content: flex-end;
 }

@@ -1,9 +1,25 @@
 html {
   scroll-behavior: smooth;
+  padding: 10px 10px 10px 10px;
+}
+
+.header-website {
   padding: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 body {
   background-color: $primary;
   color: $white;
+  width: fit-content;
+
+  .logo {
+    width: 10rem;
+    border-radius: 50%;
+  }
 }
