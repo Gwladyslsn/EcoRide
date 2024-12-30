@@ -10,6 +10,9 @@ html body {
   width: -moz-fit-content;
   width: fit-content;
 }
+html body .header-website {
+  margin-bottom: 5vh;
+}
 
 @media screen and (max-width: 768px) {
   .header-website {

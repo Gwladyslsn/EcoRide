@@ -6,6 +6,10 @@ html {
     background-color: $primary;
     color: $white;
     width: fit-content;
+
+    .header-website {
+      margin-bottom: 5vh;
+    }
   }
 }
 
