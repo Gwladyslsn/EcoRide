@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  max-width: fit-content; //pas touche
+  width: 100%; //pas touche
   padding: 10px 10px 10px 10px;
   body {
     background-color: $primary;
@@ -10,36 +10,49 @@ html {
       margin-bottom: 5vw;
     }
   }
-}
-
-///layout mobile
-
-@media screen and (max-width: 768px) {
-  .header-website {
-    justify-content: space-between;
-    a {
+  footer {
+    align-content: flex-end;
+    .footer {
+      display: flex;
+      flex-direction: row;
       color: $white;
-      text-decoration: none;
-    }
-
-    .logo {
-      width: 10rem;
-      border-radius: 50%;
+      justify-content: space-between;
+      padding-top: 100vw;
+      font-size: small;
+      .link {
+        color: $white;
+      }
     }
   }
-}
 
-///layout pc
+  ///layout mobile
 
-@media screen and (min-width: 768px) {
-  body {
-    background-color: $primary;
-    color: $white;
-    width: fit-content;
+  @media screen and (max-width: 768px) {
+    .header-website {
+      justify-content: space-between;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
 
-    .logo {
-      width: 10rem;
-      border-radius: 50%;
+      .logo {
+        width: 10rem;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  ///layout pc
+
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: $primary;
+      color: $white;
+
+      .logo {
+        width: 15%;
+        border-radius: 50%;
+      }
     }
   }
 }

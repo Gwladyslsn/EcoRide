@@ -59,6 +59,10 @@
 
 ///grand ecran
 @media screen and (min-width: 768px) {
+  .dropdown {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   .dropdown-button {
     display: none;
   }
@@ -66,7 +70,6 @@
   .navlinks {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     flex-wrap: nowrap;
 
     .navlink {
