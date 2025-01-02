@@ -1,62 +1,100 @@
-.presentation {
-  display: flex;
-  flex-direction: row;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-
-  .div-prez {
-    align-content: center;
-    background-color: $white;
-    color: $primary;
-    border-radius: 41px;
-  }
-
-  .text-prez {
-    padding: 15px;
-  }
-  .img {
-    width: 630px;
-    height: 350px;
-  }
+.div-prez {
+  align-content: center;
+  background-color: $white;
+  color: $primary;
+  border-radius: 41px;
 }
 
 .slogan {
   text-align: center;
   color: $white;
-  font-size: 36px;
   font-weight: bold;
-  padding-bottom: 150px;
-  padding-top: 150px;
 }
 
-.search-bar {
-  background-color: $white;
-  color: $primary;
-  border-radius: 41px;
-  height: 70px;
-  margin-bottom: 250px;
+// version mobile
+@media screen and (max-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+
+    .text-prez {
+      padding: 10px 10px 10px 10px;
+      font-size: 13px;
+      align-items: center;
+    }
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .slogan {
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
 
   .form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 70px;
+    flex-direction: column;
     align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
+  }
+}
 
-    .line {
-      width: 2px;
-      height: 30px;
-      background-color: $primary;
-      margin: 0 5px;
+// version pc
+@media screen and (min-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+    .text-prez {
+      padding: 15px;
     }
+    .img {
+      width: 630px;
+      height: 350px;
+    }
+  }
 
-    .no-border {
-      border: none;
-      background-color: $white;
-      color: $primary;
+  .slogan {
+    font-size: 36px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+
+  .search-bar {
+    background-color: $white;
+    color: $primary;
+    border-radius: 41px;
+    height: 70px;
+    margin-bottom: 10vw;
+
+    .form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      padding-right: 20px;
+      padding-left: 20px;
+
+      .line {
+        width: 2px;
+        height: 30px;
+        background-color: $primary;
+        margin: 0 5px;
+      }
+
+      .no-border {
+        border: none;
+        background-color: $white;
+        color: $primary;
+      }
     }
   }
 }
