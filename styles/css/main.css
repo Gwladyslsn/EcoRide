@@ -33,7 +33,7 @@ html footer .footer .link {
     text-decoration: none;
   }
   html .header-website .logo {
-    width: 10rem;
+    width: 5rem;
     border-radius: 50%;
   }
 }
@@ -43,7 +43,7 @@ html footer .footer .link {
     color: #f4f4f4;
   }
   html body .logo {
-    width: 15%;
+    width: 10rem;
     border-radius: 50%;
   }
 }
@@ -233,25 +233,44 @@ body {
   color: #011d76;
   align-items: baseline;
 }
+.summary-search-bar .summary .filter {
+  border-style: none;
+  background-color: #011d76;
+  color: #f4f4f4;
+  border-radius: 50px;
+}
 
 .result {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
+  padding-bottom: 40px;
 }
-.result .eco {
-  font-size: 12px;
+.result .place {
+  background: linear-gradient(to right, #96c1ff, rgba(150, 193, 255, 0));
+  color: #011d76;
 }
-.result .animation {
-  width: 50%;
-  height: 50%;
-}
-.result .result-info {
-  padding-bottom: 30px;
-}
-.result .result-info .place {
-  background-color: #96c1ff;
-}
-.result .result-info .bid {
+.result .bid {
   background-color: #f4f4f4;
   color: #011d76;
+}
+
+@media screen and (max-width: 768px) {
+  .trajet-eco {
+    display: none;
+  }
+  .animation {
+    width: 40%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 768px) {
+  .trajet-eco {
+    font-size: 16px;
+  }
+  .animation {
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }/*# sourceMappingURL=main.css.map */
