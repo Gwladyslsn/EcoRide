@@ -59,8 +59,7 @@ body {
 .navbar {
   display: flex;
   flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: baseline;
 }
 .navbar .navlinks {
   list-style-type: none;
@@ -76,14 +75,20 @@ body {
   .navbar .dropdown .dropdown-button {
     background-color: #f4f4f4;
     color: #011d76;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
+    border: none;
+  }
+  .navbar .dropdown .dropdown-button .bi .bi-list {
+    width: 40px;
+    height: 40px;
+    color: #011d76;
   }
   .navbar .dropdown .dropdown-button:active {
     background-color: #96c1ff;
     color: #011d76;
-    border-radius: 5%;
+    border-radius: 5px;
   }
   .navbar .dropdown .dropdown-content {
     display: none;
@@ -109,6 +114,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .navbar {
+    align-items: flex-start;
+  }
   .dropdown {
     display: flex;
     flex-wrap: nowrap;
@@ -244,13 +252,41 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding-bottom: 40px;
+  align-items: center;
 }
 .result .place {
   background: linear-gradient(to right, #96c1ff, rgba(150, 193, 255, 0));
   color: #011d76;
+  width: 70%;
+  font-size: 13px;
 }
 .result .bid {
   background-color: #f4f4f4;
+  color: #011d76;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.result .bid .profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+.result .bid .profil .photo-profil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.result .bid .line {
+  width: 2px;
+  height: 4rem;
+  background-color: #011d76;
+  margin: 0 5px;
+}
+.result .bid .details {
+  border: none;
   color: #011d76;
 }
 
@@ -258,8 +294,8 @@ body {
   .trajet-eco {
     display: none;
   }
-  .animation {
-    width: 40%;
+  .logo-eco {
+    width: 4rem;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -268,8 +304,8 @@ body {
   .trajet-eco {
     font-size: 16px;
   }
-  .animation {
-    width: 30%;
+  .logo-eco {
+    width: 60%;
     height: -moz-fit-content;
     height: fit-content;
   }
