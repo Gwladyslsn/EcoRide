@@ -1,0 +1,43 @@
+.accordion-item {
+  color: $primary;
+}
+
+.accordion-button {
+  font-size: 20px;
+}
+
+.people-review {
+  display: flex;
+
+  .photo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+}
+.d-flex {
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+
+  .back {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: $white;
+
+    .bi-arrow-left {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo {
+    width: 5rem;
+    height: 5rem;
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoride</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-website">
+      <nav class="navbar">
+        <div>
+          <a class="link" href="home.html">
+            <picture>
+              <img class="logo" src="../img/logo1.png" alt="logo Ecoride" />
+            </picture>
+          </a>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <div type="checkbox" class="dropdown-content">
+            <ul class="navlinks">
+              <li>
+                <a href="home.html" class="navlink">Accueil</a>
+              </li>
+              <li>
+                <a href="contact.html" class="navlink">Contact</a>
+              </li>
+              <li>
+                <a href="covoit.html" class="navlink">Covoiturages</a>
+              </li>
+              <li>
+                <a href="login.html" class="navlink">Se connecter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+
+
+        <a href="result.html">
+          <nav class="back">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+          &nbsp
+          <p>Retour aux resultats</p>
+        </nav>
+        </a>
+
+      <div class="card">
+        <div class="card-header text-center">trajet écologique</div>
+        <div class="card-body">
+          <section class="card-title">
+            <div class="profil">
+              <img class="photo-profil"src="../img/tata.jpeg" alt="photo de profil">
+              <div class="name">Tata</div>&nbsp
+              <div class="note">(4.9&nbsp
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>)
+              </div>
+            </section>
+            <div class="price">3 crédits</div>
+          <div class="card-text">
+            <p class="trajet">heure, lieu départ</p>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down" 
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                </svg>
+            </span>
+            <p class="trajet">heure, lieu arrivée</p>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary text-center">
+          1 places restantes
+        </div>
+      </div>
+
+      <!--contenu déroulé-->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Les avis
+            </button>
+          </h2>
+          
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <!--avis-->
+              <div class="people-review">
+                <img class="photo" src="../img/tata.jpeg" alt="photo profil"></img>&nbsp;
+                <h5>5/5</h5>
+              </div>
+              <div class="list-group"> 
+                  <div class="d-flex w-100">
+                    <small class="text-body-secondary">3 days ago</small>
+                  </div>
+                  <p class="mb-1">Super trajet</p>
+                  <small>conducteur agréable et arrangeant, je recommande.</small>
+                <p href="#" class="list-group-item list-group-item-action">
+                  
+
+                  <!--avis-->
+                  <div class="people-review">
+                    <img class="photo" src="../img/titi.jpeg" alt="photo profil"></img>&nbsp;
+                    <h5>5/5</h5>
+                  </div>
+                  <div class="list-group"> 
+                      <div class="d-flex w-100">
+                        <small class="text-body-secondary">9 days ago</small>
+                      </div>
+                      <p class="mb-1">agréable</p>
+                      <small>Super trajet, je recommande</small>
+                    <p href="#" class="list-group-item list-group-item-action">
+
+
+                  <!--avis-->
+                  <div class="people-review">
+                    <img class="photo" src="../img/toto.jpeg" alt="photo profil"></img>&nbsp;
+                    <h5>4.8/5</h5>
+                  </div>
+                  <div class="list-group"> 
+                      <div class="d-flex w-100">
+                        <small class="text-body-secondary">15 days ago</small>
+                      </div>
+                      <p class="mb-1">très bien</p>
+                      <small>Conduite agréable, ponctuel</small>
+                    <p href="#" class="list-group-item list-group-item-action">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+<!--conteneur section-->
+        <div class="accordion-item"> 
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Le véhicule
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+            <div> Marque : Tesla</div>
+            <div> Modèle : Modèle S</div>
+            <div> Energie : Electrique </div>
+            </div>
+          </div>
+        </div>
+
+<!--conteneur section-->       
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Les préférences du conducteur
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="smoke">&#x1F6AC; : non-fumeur</div>
+              <div class="pet">&#128021; : accepté</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </main>
+  </body>
+  <footer>
+    <div class="footer">
+      <p>contact@ecoride.com</p>
+      <p><a class="link" href="mentions.html"> Mentions légales </a></p>
+    </div>
+  </footer>
+</html>

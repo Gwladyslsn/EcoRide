@@ -18,7 +18,7 @@ html footer .footer {
   flex-direction: row;
   color: #f4f4f4;
   justify-content: space-between;
-  padding-top: 100vw;
+  padding-top: 10rem;
   font-size: small;
 }
 html footer .footer .link {
@@ -43,7 +43,7 @@ html footer .footer .link {
     color: #f4f4f4;
   }
   html body .logo {
-    width: 10rem;
+    width: 7rem;
     border-radius: 50%;
   }
 }
@@ -59,7 +59,6 @@ body {
 .navbar {
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
 }
 .navbar .navlinks {
   list-style-type: none;
@@ -81,8 +80,8 @@ body {
     border: none;
   }
   .navbar .dropdown .dropdown-button .bi .bi-list {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 10000px;
     color: #011d76;
   }
   .navbar .dropdown .dropdown-button:active {
@@ -110,6 +109,8 @@ body {
     top: 100%;
     right: 0;
     transition: max-height 0.2s ease-out;
+    border: solid;
+    border-color: #f4f4f4;
   }
 }
 
@@ -248,65 +249,94 @@ body {
   border-radius: 50px;
 }
 
-.result {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  padding-bottom: 40px;
-  align-items: center;
+.card {
+  margin-bottom: 2rem;
 }
-.result .place {
-  background: linear-gradient(to right, #96c1ff, rgba(150, 193, 255, 0));
+
+.card-header {
+  background-color: #94c70a;
+  opacity: 80%;
+  color: #f4f4f4;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-body {
   color: #011d76;
-  width: 70%;
-  font-size: 13px;
-}
-.result .bid {
   background-color: #f4f4f4;
-  color: #011d76;
-  display: flex;
-  font-size: 1rem;
-  justify-content: space-between;
-  align-items: center;
 }
-.result .bid .profil {
+.card-body .card-title .profil {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1rem;
+  flex-direction: row;
+  align-items: flex-start;
 }
-.result .bid .profil .photo-profil {
-  width: 40px;
-  height: 40px;
+.card-body .card-title .profil .photo-profil {
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
 }
-.result .bid .line {
-  width: 2px;
-  height: 4rem;
-  background-color: #011d76;
-  margin: 0 5px;
+.card-body .card-title .profil .note {
+  display: flex;
+  align-items: baseline;
 }
-.result .bid .details {
-  border: none;
+.card-body .price {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  font-style: oblique;
+}
+.card-body .trajet {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0;
+}
+.card-body .details {
+  display: flex;
+  justify-content: flex-end;
+}
+.card-body .details .btn-details {
+  background-color: #011d76;
+}
+
+.accordion-item {
   color: #011d76;
 }
 
-@media screen and (max-width: 768px) {
-  .trajet-eco {
-    display: none;
-  }
-  .logo-eco {
-    width: 4rem;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
+.accordion-button {
+  font-size: 20px;
 }
+
+.people-review {
+  display: flex;
+}
+.people-review .photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.d-flex {
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+a .back {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #f4f4f4;
+}
+a .back .bi-arrow-left {
+  height: 2rem;
+  width: 2rem;
+}
+
 @media screen and (min-width: 768px) {
-  .trajet-eco {
-    font-size: 16px;
-  }
-  .logo-eco {
-    width: 60%;
-    height: -moz-fit-content;
-    height: fit-content;
+  .photo {
+    width: 5rem;
+    height: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */
