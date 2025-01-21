@@ -82,18 +82,34 @@
       padding-right: 20px;
       padding-left: 20px;
 
-      .line {
-        width: 2px;
-        height: 30px;
-        background-color: $primary;
-        margin: 0 5px;
+      .form-group {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        #date {
+          position: absolute;
+          z-index: -1;
+        }
+        #calendar-button {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          fill: $primary;
+        }
       }
+    }
 
-      .no-border {
-        border: none;
-        background-color: $white;
-        color: $primary;
-      }
+    .line {
+      width: 2px;
+      height: 30px;
+      background-color: $primary;
+      margin: 0 5px;
+    }
+
+    .no-border {
+      border: none;
+      background-color: $white;
+      color: $primary;
     }
   }
 }

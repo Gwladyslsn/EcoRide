@@ -215,13 +215,28 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .search-bar .form .line {
+  .search-bar .form .form-group {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .search-bar .form .form-group #date {
+    position: absolute;
+    z-index: -1;
+  }
+  .search-bar .form .form-group #calendar-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    fill: #011d76;
+  }
+  .search-bar .line {
     width: 2px;
     height: 30px;
     background-color: #011d76;
     margin: 0 5px;
   }
-  .search-bar .form .no-border {
+  .search-bar .no-border {
     border: none;
     background-color: #f4f4f4;
     color: #011d76;

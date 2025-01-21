@@ -11,5 +11,9 @@
     "**/node_modules/**",
     ".vscode/**"
   ],
-  "liveSassCompile.settings.generateMap": true
+  "liveSassCompile.settings.generateMap": true,
+
+  "name": "Concert de Rock",
+  "date": "2025-02-14",
+  "description": "Un super concert à ne pas manquer!"
 }

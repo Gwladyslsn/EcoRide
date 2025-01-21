@@ -49,7 +49,7 @@
                 <a href="covoit.html" class="navlink">Covoiturages</a>
               </li>
               <li>
-                <a href="login.html" class="navlink">Se connecter</a>
+                <a href="login.html" class="navlink">Connexion</a>
               </li>
             </ul>
           </div>
@@ -152,34 +152,28 @@
             </label>
           </div>
           <hr class="line" />
-          <div class="calendar">
-            <button class="no-border">
-              <span>
+          <div class="form-group">
+            <label for="date" class="selected-date js-selected-date"></label>
+            <div class="date-picker-container">
+              <input type="date" id="date" name="date" />
+              <button type="button" class="no-border">
                 <svg
-                  class="no-border"
+                  id="calendar-button"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-calendar3"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"
+                    d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
                   />
                   <path
-                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
                   />
                 </svg>
-              </span>
-              <span>
-                <label class="no-border" for=":rh:"></label>
-                <span>date</span>
-              </span>
-            </button>
+              </button>
+            </div>
           </div>
           <hr class="line" />
-          <div class="search">
+          <div class="search js-search">
             <button class="no-border">
               <span>
                 <svg
@@ -194,7 +188,7 @@
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
                   />
-                  <a class="link" href="result.html"></a>
+                  <!--<a class="link" href="result.html"></a>-->
                 </svg>
               </span>
               <span>
@@ -206,6 +200,7 @@
         </form>
       </div>
     </main>
+    <script src="../javaScript/script.js"></script>
   </body>
 
   <!--main-->
